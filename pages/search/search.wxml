@@ -1,0 +1,23 @@
+<!--pages/search/search.wxml-->
+<view class='container'>
+    <view class='wrap'>
+        <view class='search'>
+            <view class='item search-box'>
+                <icon class='iconfont  icon-sousuo'></icon>
+                <input placeholder='搜索' value="{{inputTxt}}" focus='true' bindinput="getInput"></input>
+                <icon type='clear' size='12' class='clear' catchtap='clearValue' hidden="{{hiddenn}}"></icon>
+            </view>
+            <view class='item'>
+                <view catchtap='cancel' class='btn'>取消</view>
+            </view>
+        </view>
+        <view class='history'>
+            <view class='h-title'>清除历史</view>
+            <view class='h-item' wx:for='{{histories}}' wx:for-item='history' wx:key=''>
+                <icon class='iconfont  icon-sousuo'></icon>
+                <text>红楼梦</text>
+            </view>
+            <view class='h-clear' catchtap='clearHistory'>清除历史记录</view>
+        </view>
+    </view>
+</view>

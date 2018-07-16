@@ -1,0 +1,32 @@
+/* pages/search/search.wxss */
+.item:last-child {
+    flex-grow: 1;
+    margin-left: 20rpx;
+}
+.item .btn {
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #e5e5e5;
+    text-align: center;
+    color: #999;
+}
+.history{
+    margin-top: 100rpx;
+}
+.h-title{
+    margin-bottom: 30rpx;
+    color: #333;
+}
+.h-item .iconfont{
+    font-size: 16px;
+    color: #888;
+}
+.h-item text{
+    margin-left: 20rpx;
+    color: #666;
+}
+.h-clear{
+    color: #4796ff;
+    text-align: center;
+    margin-top: 60rpx;
+}

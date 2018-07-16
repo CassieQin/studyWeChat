@@ -1,0 +1,29 @@
+<!--pages/classification/classification.wxml-->
+<view class='container'>
+    <view class='wrap'>
+        <view class='search'>
+            <view class='item search-box' catchtap='search'>
+                <icon class='iconfont  icon-sousuo'></icon>
+                <input placeholder='搜索' disabled='true'></input>
+            </view>
+        </view>
+        <view class='content'>
+            <view class='c-item'>
+                <view class="c-title-list {{num == index?'c-title-list-active':' '}}" wx:for='{{titles}}' wx:key='' data-index='{{index}}' catchtap='changeList'>
+                    {{item.name}}
+                </view>
+            </view>
+            <view class='c-item'>
+               <view class='types' wx:for='{{types}}' wx:key=''>
+                    <view class='type'>
+                        <view class='img'>img</view>
+                    </view>
+                    <view class='type'>
+                        <view class='type-name'>{{item.name}}</view>
+                        <view class='type-summary'> {{item.summary}}</view>
+                    </view>
+               </view>
+            </view>
+        </view>
+    </view>
+</view>

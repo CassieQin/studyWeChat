@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+     <view class='book'>
+        <view class="book-item" wx:for="{{books}}" wx:key="" catchtap='readBook' data-bookname='{{ item.name }}' data-bookcontent='{{ item.content }}'>
+            <view class='book-infor'>
+                <view class='book-name'>{{item.name}}</view>
+                <view class='book-bg'>- TXT -</view>
+            </view>
+        </view>
+        <view class="book-item">
+            <view catchtap='addBook' class='book-infor book-plus'>+ </view>
+        </view>
+    </view> 
+</view>

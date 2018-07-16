@@ -1,0 +1,9 @@
+<!--pages/index/detail/detail.wxml-->
+<view class='container'>
+    <view class='content'>{{ content }}</view>
+    <view class='navigation'>
+        <view class='nav-item' catchtap='openList'>目录</view>
+        <view class='nav-item nav-border'>上一章</view>
+        <view class='nav-item nav-active'>下一章</view>
+    </view>
+</view>

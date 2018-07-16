@@ -1,0 +1,81 @@
+/**app.wxss**/
+page{height: 100%; background: #f6f6f6;}
+.container {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10rpx 0;
+    font-size: 14px;
+}
+.wrap {
+    padding: 20rpx;
+    height: calc(100% - 40rpx);
+}
+/*搜索框*/
+.search {
+    display: flex;
+    flex-direction: row;
+}
+.item:first-child {
+    flex-grow: 4;
+}
+.search-box {
+    position: relative;
+}
+.search-box .iconfont {
+    position: absolute;
+    z-index: 2;
+    font-size: 16px;
+    left: 20rpx;
+    color: #666;
+    top: 2rpx;
+}
+.search-box .clear {
+    position: absolute;
+    right: 20rpx;
+    z-index: 2;
+    bottom: 22rpx;
+}
+.item input {
+    height: 70rpx;
+    line-height: 70rpx;
+    background: #fff;
+    padding: 0 60rpx;
+    color: #666;
+    box-shadow: 1px 1px 5px rgba(71, 150, 255, 0.1);
+}
+
+/*字体图标*/
+@font-face {
+  font-family: 'iconfont';  /* project id 518032 */
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*本项目使用的18个图标  */
+.icon-zhiding:before{content: '\e739';}
+.icon-zuojiantou:before{content: '\e736';}
+.icon-youjiantou:before{content: '\e735';}
+.icon-shangjiantou:before{content: '\e734';}
+.icon-xiajiantou1:before{content: '\e733';}
+.icon-xiajiantou:before{content: '\e6cc';}
+.icon-gengduotianchong:before{content: '\e67f';}
+.icon-erweima:before{content: '\e65f';}
+.icon-fenleiorguangchangorqita:before{content: '\e64f';}
+.icon-dibiao:before{content: '\e64d';}
+.icon-bangzhu:before{content: '\e64a';}
+.icon-xinfeng:before{content: '\e640';}
+.icon-duihuaxinxi:before{content: '\e639';}
+.icon-sousuo:before{content: '\e62f';}
+.icon-shouye:before{content: '\e62d';}
+.icon-shezhi:before{content: '\e62a';}
+.icon-shanchu:before{content: '\e629';}
+.icon-dianhua:before{content: '\e61b';}

@@ -1,0 +1,13 @@
+/* pages/catalogue/catalogue.wxss */
+.container{
+    background: #fff;
+}
+.catalogue{
+    padding:  10rpx 20rpx;  
+}
+.list{
+    height: 90rpx;
+    line-height: 90rpx;
+    border-bottom: 1px solid #e8e8e8;
+    color: #666;
+}
